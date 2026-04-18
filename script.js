@@ -34,3 +34,16 @@ function sendEmail(type) {
   const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailtoLink;
 }
+
+function toggleAccordion(element) {
+  // Toggle the 'active' class for the arrow rotation
+  element.classList.toggle("active");
+
+  // Toggle the visibility of the content
+  const content = element.nextElementSibling;
+  if (content.style.maxHeight) {
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+}

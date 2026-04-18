@@ -190,3 +190,63 @@ body {
 .email-button:hover {
   background-color: #e4ddd2;
 }
+
+/* Experience Accordion */
+.experience-container {
+  margin-top: 20px;
+  max-width: 450px; /* Keeps it clean next to the image */
+}
+
+.acc-item {
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.acc-header {
+  width: 100%;
+  padding: 15px;
+  background: #2d3a46;
+  color: #f4f1eb;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.acc-header::after {
+  content: '▼';
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.acc-header.active::after {
+  transform: rotate(180deg);
+}
+
+.acc-header:hover {
+  background: #4a5a69;
+}
+
+.acc-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.acc-content ul {
+  padding: 15px 40px;
+  margin: 0;
+  list-style-type: square;
+}
+
+.acc-content li {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
