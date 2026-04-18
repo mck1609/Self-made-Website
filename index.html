@@ -5,141 +5,189 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maximilian Cassis Krizmanic</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 </head>
 <body>
 
+  <!-- HERO -->
   <section class="hero">
-  <img src="images/Background_NYC.JPG" alt="Hero Image" id="hero-image">
-  <div class="hero-overlay"></div>
-  <div class="hero-text">
-    <h1>Maximilian Cassis Krizmanic</h1>
-    <p>Freelance Broadcast Technician | Rigger | CS Student</p>
-  </div>
-  <a href="#about" class="scroll-hint">Scroll down ↓</a>
-</section>
+    <img src="images/Background_NYC.JPG" alt="New York City skyline" id="hero-image">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <p class="hero-eyebrow">Broadcast · Rigging · Computer Science</p>
+      <h1>Maximilian<br>Cassis<br>Krizmanic</h1>
+    </div>
+    <a href="#about" class="scroll-hint">
+      <span>Scroll</span>
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="12" height="20" rx="6" stroke="currentColor" stroke-width="1.2"/>
+        <circle class="scroll-dot" cx="7" cy="6" r="2" fill="currentColor"/>
+      </svg>
+    </a>
+  </section>
 
-<section class="main-layout">
-  <aside class="sidebar">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#cv">CV & References</a>
-      <a href="#Photography">Photography</a>
-      <a href="#contact">Contact</a>
-      
-    </nav>
-  </aside>
+  <!-- MAIN LAYOUT -->
+  <div class="main-layout">
 
-  <main class="content">
-    <section id="about" class="content-section">
-      <h2>About</h2>
-      <img src="images/Me.jpg" alt="Maximilian" style="float: right; width: 400px; margin-left: 30px; border-radius: 10px; margin-bottom: 20px;">
-      <p>
-       Hey There!
-       I'm Maximilian, a 20 year old Computer Science student at the Humboldt University of Berlin.
-       I have a background in broadcast technology, rigging, and technical event production, my experience is listed in- depth a little further down.
-       My interests, Computer science and Broadcast aside, are Photography, reading, and nature walks.
-      </p>
-      <div style="clear: both;"></div> </section>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-name">MCK</div>
+        <nav>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#cv" class="nav-link">CV &amp; References</a>
+          <a href="#Photography" class="nav-link">Photography</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="sidebar-line"></div>
+        <div class="sidebar-tagline">Berlin<br>Based</div>
+      </div>
+    </aside>
 
-   <section id="experience" class="content-section">
-  <h2>Experience</h2>
-  <img src="images/Work.jpg" alt="Maximilian" style="float: right; width: 400px; margin-left: 30px; border-radius: 10px; margin-bottom: 20px;">
-  <p>
-    Experience in broadcast operations, studio support, rigging, and technical
-    event production. Contributed to live productions requiring reliability,
-    precision, and calm problem-solving.
-  </p>
+    <!-- CONTENT -->
+    <main class="content">
 
-  <div class="experience-container">
-    <div class="acc-item">
-      <button class="acc-header" onclick="toggleAccordion(this)">
-        <span>Sports</span>
-        <span class="acc-icon">+</span>
-      </button>
-      <div class="acc-content">
-        <div class="acc-inner">
-          <div class="production-entry">
-            <span class="year">2025</span>
-            <span class="desc">Womens Euro 2025, Basel</span>
-          </div>
-          <div class="production-entry">
-            <span class="year">2023 - Present</span>
-            <span class="desc">Bundesliga (1./2. Liga), Hybrid</span>
-          </div>
-          <div class="production-entry">
-            <span class="year">2025</span>
-            <span class="desc">Fifa World Cup qualifiers, Hybrid</span>
+      <!-- ABOUT -->
+      <section id="about" class="content-section">
+        <span class="section-label">01 — About</span>
+        <h2>Hey There.</h2>
+        <div class="section-body with-image">
+          <img src="images/Me.jpg" alt="Maximilian Cassis Krizmanic" class="section-img">
+          <div class="section-text">
+            <p>
+              I'm Maximilian, a 20-year-old Computer Science student at Humboldt University of Berlin.
+              I have a background in broadcast technology, rigging, and technical event production —
+              my experience is listed in depth a little further below.
+            </p>
+            <p>
+              Outside of work and studies, my interests include photography, reading, and long nature walks.
+            </p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="acc-item">
-      <button class="acc-header" onclick="toggleAccordion(this)">
-        <span>Festivals</span>
-        <span class="acc-icon">+</span>
-      </button>
-      <div class="acc-content">
-        <div class="acc-inner">
-          <div class="production-entry">
-            <span class="year">2024</span>
-            <span class="desc">Rigging for Rolling Loud, Vienna</span>
-          </div>
-          <div class="production-entry">
-            <span class="year">24/25</span>
-            <span class="desc">Rigging for Lollapalooza Berlin</span>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="content-section">
+        <span class="section-label">02 — Experience</span>
+        <h2>On the Ground.</h2>
+        <div class="section-body with-image">
+          <img src="images/Work.jpg" alt="Maximilian working on broadcast equipment" class="section-img">
+          <div class="section-text">
+            <p>
+              Experience in broadcast operations, studio support, rigging, and technical event production.
+              Contributed to live productions requiring reliability, precision, and calm problem-solving.
+            </p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="acc-item">
-      <button class="acc-header" onclick="toggleAccordion(this)">
-        <span>Studio & Broadcast</span>
-        <span class="acc-icon">+</span>
-      </button>
-      <div class="acc-content">
-        <div class="acc-inner">
-          <div class="production-entry">
-            <span class="year">Now</span>
-            <span class="desc">WELT Studio Technician, Berlin</span>
+        <div class="experience-container">
+
+          <div class="acc-item">
+            <button class="acc-header" onclick="toggleAccordion(this)">
+              <span>Sports</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="acc-content">
+              <div class="acc-inner">
+                <div class="production-entry">
+                  <span class="year">2025</span>
+                  <span class="desc">Women's Euro 2025, Basel</span>
+                </div>
+                <div class="production-entry">
+                  <span class="year">2023–Now</span>
+                  <span class="desc">Bundesliga (1./2. Liga), Hybrid</span>
+                </div>
+                <div class="production-entry">
+                  <span class="year">2025</span>
+                  <span class="desc">FIFA World Cup Qualifiers, Hybrid</span>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="acc-item">
+            <button class="acc-header" onclick="toggleAccordion(this)">
+              <span>Festivals</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="acc-content">
+              <div class="acc-inner">
+                <div class="production-entry">
+                  <span class="year">2024</span>
+                  <span class="desc">Rigging — Rolling Loud, Vienna</span>
+                </div>
+                <div class="production-entry">
+                  <span class="year">24/25</span>
+                  <span class="desc">Rigging — Lollapalooza Berlin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-header" onclick="toggleAccordion(this)">
+              <span>Studio &amp; Broadcast</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="acc-content">
+              <div class="acc-inner">
+                <div class="production-entry">
+                  <span class="year">Now</span>
+                  <span class="desc">WELT Studio Technician, Berlin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-    </div>
+      </section>
+
+      <!-- CV -->
+      <section id="cv" class="content-section">
+        <span class="section-label">03 — CV &amp; References</span>
+        <h2>Work With Me.</h2>
+        <p>My CV and a list of references are available on request.</p>
+        <div class="button-group">
+          <button onclick="sendEmail('CV')" class="email-button">Request CV</button>
+          <button onclick="sendEmail('References')" class="email-button email-button--outline">Request References</button>
+        </div>
+      </section>
+
+      <!-- PHOTOGRAPHY -->
+      <section id="Photography" class="content-section">
+        <span class="section-label">04 — Photography</span>
+        <h2>Through the Lens.</h2>
+        <p>Portfolio coming soon.</p>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="content-section content-section--last">
+        <span class="section-label">05 — Contact</span>
+        <h2>Get in Touch.</h2>
+        <div class="contact-links">
+          <a href="mailto:maximilian-cassis@web.de" class="contact-link">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">maximilian-cassis@web.de</span>
+          </a>
+          <a href="https://www.instagram.com/max.imilian1609/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-label">Instagram</span>
+            <span class="contact-value">@max.imilian1609</span>
+          </a>
+          <a href="https://www.linkedin.com/in/Bloodwork0815/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Maximilian Cassis Krizmanic</span>
+          </a>
+        </div>
+      </section>
+
+    </main>
   </div>
-</section>
-    <section id="cv" class="content-section">
-  <h2>CV & References</h2>
-  <p>My CV and a list of references are available upon request.</p>
-  
-  <div class="button-group">
-    <button onclick="sendEmail('CV')" class="email-button">Request CV</button>
-    <button onclick="sendEmail('References')" class="email-button">Request References</button>
-  </div>
-</section>
 
-<section id="Photography" class="content-section">
-      <h2>Photography</h2>
-      <p>Check out my photography portfolio!
-       
-      </p>
-    </section>
-
-
-
- <section id="contact" class="content-section">
-      <h2>Contact</h2>
-      <p><a href="mailto:maximilian-cassis@web.de">Maximilian-cassis@web.de</a></p>
-      <p><a href="https://www.instagram.com/max.imilian1609/" target="_blank">Instagram</a></p>
-      <p><a href="https://www.linkedin.com/in/Bloodwork0815/" target="_blank">LinkedIn</a></p>
-    </section>
-  </main>
-</section>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
